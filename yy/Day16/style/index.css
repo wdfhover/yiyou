@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+/*CSS 初始化*/
+body {
+	/*字体家族 不建议使用中文名称 \5b8b\4f53宋体 可写成simsun*/
+	font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\5b8b\4f53,sans-serif;
+	background-color: #fff;
+	color: #6a6a6a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font:inherit;
+	/*border: 1px solid red;*/
+}
+
+fieldset,img,input,button {
+	border: none;
+	outline-style: none;
+}
+
+ul,ol {
+	list-style-type: none;
+}
+
+select,input,img{
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	color: #6a6a6a;
+	text-decoration: none;
+}
+
+.shortcut {
+	width: 100%;
+	height: 30px;
+	min-width: 1060px;
+	line-height: 30px;
+	background-color: #f1f1f1;
+}
+
+.shortcut .wrap {
+	width: 1060px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.shortcut .wrap .w-l {
+	height: 30px;
+	width: 220px;
+	float: left;
+}
+
+.shortcut .w-l strong {
+	padding-left: 24px;
+}
+
+.shortcut .w-l mark {
+	background-color: #f1f1f1;
+	color: #308e00;
+	padding-right: 16px;
+}
+
+.shortcut .wrap .w-r{
+	float: right;
+} 
+
+.shortcut .wrap .w-r ul,.top-header .hotwords ul,#ad .h-type ul{
+	display: table;
+}
+
+.shortcut .wrap .w-r li,.top-header .hotwords li,#ad .h-type li {
+	/*float: right;*/
+	display: inline-block;
+}
+
+.shortcut .wrap .w-r li a {
+	padding: 0 12px;  /*=padding: 0 10px;*/
+}
+
+.shortcut .w-r .w-r-car {
+	background: url(../images/car.png)no-repeat 1px center;	
+	/*text-decoration: 20px;*/
+	padding-left: 5px;
+	margin-left: 10px;
+}
+
+.shortcut .w-r .wang {
+	background: url(../images/wang.png)no-repeat 1px center;	
+	padding-left: 5px;
+	margin-left: 10px;
+}
+
+.shortcut .w-r .wang img {
+	position: relative;
+	right: 5px;
+}
+
+.shortcut .arrows-down {
+	background: url(../images/addrow.png) no-repeat;
+	background-position: 90% 50%;
+}
+
+.shortcut .arrows-down a {
+	margin-right: 10px;
+}
+
+.shortcut .w-r .resiger {
+	color: #308e00;
+}
+
+.shortcut .wrap .w-r a:hover {
+	color: #c60c1b;
+}
+
+/*第二个header*/
+.top-header {
+	width: 1060px;
+	height: 130px;
+	margin: 0 auto;
+	position: relative; 
+}
+
+.top-header .logo h1 a {
+	width: 190px;
+	height: 70px;
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	top:35px;
+	color: transparent;
+}
+
+.search {
+	width: 543px;
+	/*margin-left: 320px;*/
+	position: absolute;
+	top: 34px;
+	left: 356px;
+}
+
+.search input {
+	width: 451px;
+	height: 36px;
+	line-height: 40px;
+	border: 2px solid #308e00;
+	text-indent: 10px;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	vertical-align: top;
+}
+
+.search button {
+	width: 88px;
+	height: 40px;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+	cursor: pointer;
+	background-color: #308e00;
+	font-size: 1.5em;
+}
+
+.search button a {
+	color: #fff;
+}
+
+.car {
+	width: 148px;
+	height: 38px;
+	background-color: #fafafa;
+	border: 1px solid #d8d8d8;
+	position: absolute;
+	right: 0;
+	top: 34px;
+	line-height: 38px;
+	text-align: center;
+	display: table;
+}
+
+.car .icon1 {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../images/car.png) no-repeat;
+	-webkit-background-size: 15px;
+	background-size: 15px;
+	vertical-align: middle;
+	position: relative;
+	left: 7px;
+}
+
+.car .icon2 {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/car-h.png) no-repeat;
+	-webkit-background-size: 18px;
+	background-size: 18px;
+	vertical-align: middle;
+	position: relative;
+	top: -13px;
+	left: 7px;
+}
+
+.car strong {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	color: #fff;
+	position: relative;
+	top: -14px;
+	left: -8px;
+}
+
+.car .icon3 {
+	display: table-cell;
+	width: 6px;
+	height: 6px;
+	/*background-color: red;*/
+	background: url(../images/r-addrow.png) no-repeat;
+	position: relative;
+	left: -15px;
+	top: 18px;
+
+}
+
+.car a {
+	padding: 0 5px;
+	font-size: 1.2em;
+	position: relative;
+	left: 8px;
+} 
+
+.top-header .hotwords {
+	width: 460px;
+	height: 30px;
+	position: absolute;
+	top: 85px;
+	left: 356px;
+
+}
+
+.top-header .hotwords li a {
+	padding: 0 7px 0 9px;
+	border-right: 1px dashed #ababab;
+}
+
+.top-header .hotwords .hot-top {
+	font-weight: bold;
+}
+
+.top-header .hotwords .hot-color a {
+	color: #308e00;
+}
+
+.top-header .hotwords a:hover,.top-header .car a:hover,.search button a:hover{
+	color: #c60c1b;
+}
+
+.top-header .hotwords .hnone,#ad .h-type .ad-none {
+	border: none;
+}
+
+/*广告*/
+#ad {
+	width: 100%;
+	height: 535px;
+	margin-bottom: 20px;
+}
+
+#ad .header {
+	width: 1060px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+}
+
+#ad header {
+	width: 1060px;
+	height: 35px;
+	/*line-height: 35px;
+	text-align: center;*/
+	margin: 0 auto;
+}
+
+#ad .header-nav {
+	width: 200px;
+	height: 35px;
+	background-color: #308e00;
+	display: inline-block;
+	float: left;
+	font-size: 1.2em;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+#ad .header-nav img {
+	position: relative;
+	top:0;
+	left: 8px;
+}
+
+#ad .header-nav strong {
+	display: inline-block;
+	text-indent: 20px;
+}
+
+#ad .h-type li a {
+	padding: 0 22px 0 27px;
+	border-right: 1px dashed #ababab;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+#ad .h-type .ad-header {
+	padding: 0 27px 0 31px;
+	border-right: 1px dashed #ababab;
+	font-weight: bold;
+	color: #308e00;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+#ad .ad-middle {
+	width: 100%;
+	height: 498px;
+	border-top: 2px solid #308e00;
+	background-color: #fee851;
+}
+
+#ad .ad-middle .ad-content {
+	width: 1060px;
+	height: 498px;
+	margin: 0 auto;
+	background: url(../images/ad.png);
+	position: relative;
+}
+
+#ad .ad-content .ad-l{
+	width: 200px;
+	height: 498px;
+	background-color: #3a3a29;
+	float: left;
+}
+
+#ad .section {
+	display: table;
+	width: 192px;
+	margin: 12px auto;
+	border-bottom: 1px dashed #90908d;
+}
+
+#ad .section h2 {
+	display: table-caption;
+	text-indent: 30px;
+	color: #fff;
+	padding-bottom: 6px;	
+}
+
+#ad .section .h1 {
+	background: url(../images/nav1.png) no-repeat;
+}
+
+#ad .section:hover .h1 {
+	background: url(../images/section1.png) no-repeat;
+	
+}
+
+#ad .section .h2 {
+	background: url(../images/nav2.png) no-repeat;
+}
+
+#ad .section:hover .h2 {
+	background: url(../images/section2.png) no-repeat;
+}
+
+#ad .section .h3 {
+	background: url(../images/nav3.png) no-repeat;
+}
+
+#ad .section:hover .h3 {
+	background: url(../images/section3.png) no-repeat;
+}
+
+#ad .section .h4 {
+	background: url(../images/nav4.png) no-repeat;
+}
+
+#ad .section:hover  .h4{
+	background: url(../images/section5.png) no-repeat;
+}
+
+#ad .section .h5 {
+	background: url(../images/nav5.png) no-repeat;
+}
+
+#ad .section:hover .h5 {
+	background: url(../images/section6.png) no-repeat;
+}
+
+#ad .section .h6 {
+	background: url(../images/nav7.png) no-repeat;
+}
+
+#ad .section:hover .h6 {
+	background: url(../images/section7.png) no-repeat;
+}
+
+#ad .section .h7 {
+	background: url(../images/nav8.png) no-repeat;
+}
+
+#ad .section:hover .h7 {
+	background: url(../images/section8.png) no-repeat;
+}
+
+.section .row {
+	display: table-row;
+}
+
+.section .row .cell {
+	display: table-cell;
+	width: 48px;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#ad .ad-l .slast {
+	border: none;
+}
+
+#ad .ad-content .ad-r {
+	width: 200px;
+	height: 480px;
+	background-color: #fff;
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+#ad .news {
+	width: 153px;
+	height: 440px;
+	margin: 0 auto;
+}
+
+#ad .news-h {
+	border-bottom: 1px dashed #90908d;
+}
+
+#ad .news-h h2 {
+	display: inline-block;
+	padding:22px 0 13px 0;
+
+}
+
+#ad .news-h a {
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	padding-top: 22px;
+}
+
+#ad .news-list .n-first {
+	padding-top: 12px;
+}
+
+#ad .news-list li {
+	padding-top: 3px;
+}
+
+#ad .news-list span {
+	padding-right: 3px;
+}
+
+#ad .news-img img {
+	padding-top: 18px;
+}
+
+.h-type a:hover, .section:hover a, #ad .section:hover h2, .news ul li a:hover{
+	color: #c60c1b;
+}
+
+ /*#ad .section {
+ 	background-color: #fff;
+ }*/
+
+.ad-middle .ad-m {
+	position: absolute;
+	bottom: 19px;
+	left: 430px;
+	width: 300px;
+	height: 20px;
+}
+
+.ad-middle .ad-m .cir {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #b1a138;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.ad-middle .ad-m .cle {
+	background-color: #fee851;
+	width: 16px; 
+	height: 16px;
+
+	border-radius: 8px;
+	position: relative;
+	left: 33px;
+	top: 2px;
+}
